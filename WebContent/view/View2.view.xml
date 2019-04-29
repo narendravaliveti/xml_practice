@@ -1,0 +1,8 @@
+<mvc:View
+        controllerName="route.controller.view2"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+    <Button
+            text="Back Page"
+            press=".onBtnPress"/>
+</mvc:View>
