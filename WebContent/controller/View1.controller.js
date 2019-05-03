@@ -12,9 +12,12 @@ sap.ui.define([
         },
         onBtnPress1(oController) {
             var oBundle = this.getOwnerComponent().getModel("i18n").getResourceBundle();
-            var oName = this.getOwnerComponent().getModel().getProperty("/student").name;
+            var oName = this.getOwnerComponent().getModel().getProperty("/student/0").name;
             var sMsg = oBundle.getText("msgToastBtnPrsMsg", [oName]);
             oMessageToast.show("Hello "+oName);
+        },
+        onDialogBtnPress(oController) {
+            this.getOwnerComponent()._componentDialog.open()
         }
     });
 });

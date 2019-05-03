@@ -48,6 +48,13 @@
           "viewName": "View2"
         }
       }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
     }
   }
 }

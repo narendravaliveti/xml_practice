@@ -1,5 +1,13 @@
 {
-  "student" : {
-    "name" : "Narendra"
-  }
+  "student" : [
+    {
+      "name" : "Narendra"
+    },
+    {
+      "name" : "Narendra1"
+    },
+    {
+      "name" : "Narendra2"
+    }
+  ]
 }

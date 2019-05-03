@@ -1,0 +1,14 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Panel class="sapUiSmallMargin"
+           width="auto"
+           expandable="true"
+           headerText="ListItems">
+        <content>
+            <List items="{/student}">
+                <DisplayListItem label="{name}" />
+            </List>
+        </content>
+    </Panel>
+</core:FragmentDefinition>

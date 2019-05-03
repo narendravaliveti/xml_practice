@@ -2,7 +2,24 @@
         controllerName="route.controller.view2"
         xmlns="sap.m"
         xmlns:mvc="sap.ui.core.mvc">
-    <Button
-            text="Back Page"
-            press=".onBtnPress"/>
+    <Page title="{i18n>view1Title}">
+        <content>
+            <Panel class="sapUiResponsiveMargin"
+                   width="auto">
+                <content>
+                    <Button class="sapUiSmallMarginEnd myButton"
+                            text="Back Page"
+                            press=".onBtnPress"/>
+                    <Button text="{i18n>dialogBtn}"
+                            press=".onDialogPress"/>
+                </content>
+            </Panel>
+            <Dialog id="myDialog"
+                    title="Dialog">
+                <content>
+                    <Text text="Dialog Practice"></Text>
+                </content>
+            </Dialog>
+        </content>
+    </Page>
 </mvc:View>
