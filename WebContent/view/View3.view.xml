@@ -1,0 +1,76 @@
+<mvc:View
+        controllerName="route.controller.View3"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:form="sap.ui.layout.form"
+        displayBlock="true">
+    <Page title="{i18n>view3Title}"
+          showNavButton="true"
+          enableScrolling="false"
+          navButtonPress=".navButtonPress">
+        <content>
+            <Panel width="auto">
+                <content>
+                    <form:Form>
+                        <form:layout>
+                            <form:ResponsiveGridLayout labelSpanL="4"
+                                                        labelSpanM="4"/>
+                        </form:layout>
+                        <form:formContainers>
+                            <form:FormContainer>
+                                <form:formElements>
+                                    <form:FormElement label="StudentId">
+                                        <form:fields>
+                                            <Text text="{StdModel>/StdId}"/>
+                                        </form:fields>
+                                    </form:FormElement>
+                                </form:formElements>
+                            </form:FormContainer>
+                            <form:FormContainer>
+                                <form:formElements>
+                                    <form:FormElement label="StudentName">
+                                        <form:fields>
+                                            <Text text="{StdModel>/StdName}"/>
+                                        </form:fields>
+                                    </form:FormElement>
+                                </form:formElements>
+                            </form:FormContainer>
+                        </form:formContainers>
+                    </form:Form>
+                </content>
+            </Panel>
+            <Page showHeader="false">
+                <content>
+                    <Table items="{StdModel>/StudentMarks}">
+                        <columns>
+                            <Column>
+                                <header>
+                                    <Text text="Semester"/>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Text text="Subject"/>
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Text text="Marks"/>
+                                </header>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{StdModel>Semester}"/>
+                                    <Text text="{StdModel>Subject}"/>
+                                    <Text text="{StdModel>StdMarks}"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+            </Page>
+        </content>
+    </Page>
+</mvc:View>

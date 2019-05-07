@@ -38,6 +38,11 @@
           "pattern": "view2",
           "name": "View2",
           "target": "View2"
+        },
+        {
+          "pattern": "view3",
+          "name": "View3",
+          "target": "View3"
         }
       ],
       "targets": {
@@ -46,6 +51,9 @@
         },
         "View2": {
           "viewName": "View2"
+        },
+        "View3": {
+          "viewName": "View3"
         }
       }
     },

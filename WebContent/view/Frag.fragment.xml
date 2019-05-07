@@ -6,8 +6,10 @@
            expandable="true"
            headerText="ListItems">
         <content>
-            <List items="{/student}">
-                <DisplayListItem label="{name}" />
+            <List items="{/Students}">
+                <items>
+                    <DisplayListItem label="{StdName}" />
+                </items>
             </List>
         </content>
     </Panel>

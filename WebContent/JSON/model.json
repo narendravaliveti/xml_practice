@@ -1,13 +1,13 @@
 {
-  "student" : [
+  "Students" : [
     {
-      "name" : "Narendra"
+      "StdName" : "Narendra"
     },
     {
-      "name" : "Narendra1"
+      "StdName" : "Narendra1"
     },
     {
-      "name" : "Narendra2"
+      "StdName" : "Narendra2"
     }
   ]
 }

@@ -23,7 +23,7 @@
                             description="Hello {/student/0/name}"/>
                 </content>
             </Panel>
-            <core:Fragment fragmentName="route.view.Frag" id="TestFragment1" type="XML"></core:Fragment>
+            <core:Fragment fragmentName="route.view.Frag" type="XML"></core:Fragment>
         </content>
     </Page>
 </mvc:View>
