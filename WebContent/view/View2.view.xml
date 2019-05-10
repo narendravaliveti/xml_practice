@@ -9,31 +9,32 @@
           enableScrolling="false"
           navButtonPress=".navButtonPress">
         <content>
-            <core:Fragment fragmentName="route.view.AddStudentDialog" type="XML"></core:Fragment>
+            <core:Fragment fragmentName="route.view.StudentDialog" type="XML"></core:Fragment>
             <Page showHeader="false">
+                <subHeader>
+                    <Toolbar>
+                        <content>
+                            <ToolbarSpacer/>
+                            <Input placeholder="Search" liveChange=".onSearch" width="25%"/>
+                            <Button text="Add" icon="sap-icon://add" press=".onAddStudentPress"/>
+                            <Button text="Update" icon="sap-icon://edit" press=".onUpdateStudentPress"/>
+                            <Button text="Delete" icon="sap-icon://delete" press=".onDeleteListItem"/>
+                        </content>
+                    </Toolbar>
+                </subHeader>
                 <content>
-                        <List items="{StdModel>/Students}"
-                              id="studentList"
-                              mode="MultiSelect"
-                              growing="true"
-                              growingThreshold="8">
-                            <headerToolbar>
-                                <Toolbar>
-                                    <content>
-                                        <ToolbarSpacer/>
-                                        <Button text="Add" icon="sap-icon://add" press=".onAddStudentPress"/>
-                                        <Button text="Update" icon="sap-icon://edit" press=".onAddStudentPress"/>
-                                        <Button text="Delete" icon="sap-icon://delete" press=".onDeleteListItem"/>
-                                    </content>
-                                </Toolbar>
-                            </headerToolbar>
-                            <items>
-                                <StandardListItem title="{StdModel>StdId}"
-                                                  description="{StdModel>StdName}"
-                                                  type="Navigation"
-                                                  press=".listNavPress"/>
-                            </items>
-                        </List>
+                    <List items="{StdModel>/Students}"
+                          id="studentList"
+                          mode="MultiSelect"
+                          growing="true"
+                          growingThreshold="8">
+                        <items>
+                            <StandardListItem title="{StdModel>StdId}"
+                                              description="{StdModel>StdName}"
+                                              type="Navigation"
+                                              press=".listNavPress"/>
+                        </items>
+                    </List>
                 </content>
             </Page>
         </content>

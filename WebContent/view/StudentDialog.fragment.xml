@@ -2,12 +2,11 @@
         xmlns="sap.m"
         xmlns:core="sap.ui.core"
         xmlns:form="sap.ui.layout.form">
-    <Dialog id="AddStudentDialog"
-            title="Add Student">
+    <Dialog id="StudentDialog">
         <content>
-            <form:Form title="Add Student">
+            <form:Form>
                 <form:layout>
-                    <form:ResponsiveGridLayout />
+                    <form:ResponsiveGridLayout/>
                 </form:layout>
                 <form:FormContainer>
                     <form:FormElement>
@@ -15,14 +14,16 @@
                                required="true"/>
                         <form:fields>
                             <Input value="{StdModel>/AddStudent/StdId}"
-                                    change=".onIdChange"/>
+                                   change=".onIdChange"
+                                   id="StdIdInput"/>
                         </form:fields>
                     </form:FormElement>
                     <form:FormElement>
                         <Label text="StudentName"
                                required="true"/>
                         <form:fields>
-                            <Input value="{StdModel>/AddStudent/StdName}"/>
+                            <Input value="{StdModel>/AddStudent/StdName}"
+                                   id="StdNameInput"/>
                         </form:fields>
                     </form:FormElement>
                 </form:FormContainer>
